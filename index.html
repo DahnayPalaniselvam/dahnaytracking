@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<!-- index.html -->
+<head>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <h1>Welcome to the Web Portal</h1>
+    <form action="/submit" method="POST">
+        <label for="input_data">Container Number:</label>
+        <input type="text" name="input_data" id="input_data">
+        <button type="submit">Track Container</button>
+    </form>
+</body>
+</html>
